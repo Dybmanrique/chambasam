@@ -1,3 +1,3 @@
 <h1 class="text-4xl dark:text-white">
-    Dev<span class="font-extrabold">Jobs</span>
+    Chamba<span class="font-extrabold">SAM</span>
 </h1>
