@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Categoria;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -13,46 +14,25 @@ class CategoriaSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('categorias')->insert([
-            'categoria' => 'Backend Developer',
-            'created_at' => date('Y-m-d H:i:s'),
-            'updated_at' => date('Y-m-d H:i:s'),
-        ]);
+        $datos = [
+            ['categoria' => 'Administración y Oficina'],
+            ['categoria' => 'Atención al Cliente'],
+            ['categoria' => 'Ventas y Marketing'],
+            ['categoria' => 'Finanzas y Contabilidad'],
+            ['categoria' => 'Tecnología de la Información (TI)'],
+            ['categoria' => 'Recursos Humanos'],
+            ['categoria' => 'Salud y Medicina'],
+            ['categoria' => 'Educación y Formación'],
+            ['categoria' => 'Producción y Manufactura'],
+            ['categoria' => 'Construcción y Mantenimiento'],
+            ['categoria' => 'Logística y Transporte'],
+            ['categoria' => 'Hostelería y Turismo'],
+            ['categoria' => 'Creatividad y Diseño'],
+            ['categoria' => 'Medios de Comunicación y Publicidad'],
+            ['categoria' => 'Ciencias e Investigación'],
+            ['categoria' => 'Servicios Sociales y Comunitarios'],
+        ];
 
-        DB::table('categorias')->insert([
-            'categoria' => 'Front end Developer',
-            'created_at' => date('Y-m-d H:i:s'),
-            'updated_at' => date('Y-m-d H:i:s'),
-        ]);
-
-        DB::table('categorias')->insert([
-            'categoria' => 'Mobile Developer',
-            'created_at' => date('Y-m-d H:i:s'),
-            'updated_at' => date('Y-m-d H:i:s'),
-        ]);
-
-        DB::table('categorias')->insert([
-            'categoria' => 'Techlead',
-            'created_at' => date('Y-m-d H:i:s'),
-            'updated_at' => date('Y-m-d H:i:s'),
-        ]);
-
-        DB::table('categorias')->insert([
-            'categoria' => 'UX / UI Design',
-            'created_at' => date('Y-m-d H:i:s'),
-            'updated_at' => date('Y-m-d H:i:s'),
-        ]);
-
-        DB::table('categorias')->insert([
-            'categoria' => 'Software Architecture',
-            'created_at' => date('Y-m-d H:i:s'),
-            'updated_at' => date('Y-m-d H:i:s'),
-        ]);
-
-        DB::table('categorias')->insert([
-            'categoria' => 'Devops',
-            'created_at' => date('Y-m-d H:i:s'),
-            'updated_at' => date('Y-m-d H:i:s'),
-        ]);
+        Categoria::insert($datos);
     }
 }
