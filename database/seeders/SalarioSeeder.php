@@ -14,25 +14,13 @@ class SalarioSeeder extends Seeder
     public function run(): void
     {
         DB::table('salarios')->insert([
-            'salario' => 'S/. 0 - S/. 499',
+            'salario' => 'S/. 1025',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
         DB::table('salarios')->insert([
-            'salario' => 'S/. 500 - S/. 749',
-            'created_at' => date('Y-m-d H:i:s'),
-            'updated_at' => date('Y-m-d H:i:s'),
-        ]);
-
-        DB::table('salarios')->insert([
-            'salario' => 'S/. 750 - S/. 999',
-            'created_at' => date('Y-m-d H:i:s'),
-            'updated_at' => date('Y-m-d H:i:s'),
-        ]);
-
-        DB::table('salarios')->insert([
-            'salario' => 'S/. 1000 - S/. 1499',
+            'salario' => 'S/. 1025 - S/. 1499',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
@@ -56,7 +44,25 @@ class SalarioSeeder extends Seeder
         ]);
 
         DB::table('salarios')->insert([
-            'salario' => 'S/. 3000 - S/. 4999',
+            'salario' => 'S/. 3000 - S/. 3499',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s'),
+        ]);
+
+        DB::table('salarios')->insert([
+            'salario' => 'S/. 3500 - S/. 3999',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s'),
+        ]);
+
+        DB::table('salarios')->insert([
+            'salario' => 'S/. 4000 - S/. 4499',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s'),
+        ]);
+
+        DB::table('salarios')->insert([
+            'salario' => 'S/. 4500 - S/. 4999',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
